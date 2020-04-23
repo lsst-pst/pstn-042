@@ -4,9 +4,14 @@
 \input{meta}
 
 % Package imports go here.
+\usepackage{tcolorbox}
 
 % Local commands go here.
-
+\newcommand{\note}[1]{
+   \begin{tcolorbox}[colback=red!5!white, colframe=red!75!black]
+      #1
+   \end{tcolorbox}
+}
 
 
 \newcommand{\docRef}{PSTN-042}
@@ -21,7 +26,8 @@
 
 \input{abstract}
 
-\input{body}
+%\input{body}
+\input{outline}
 
 \appendix
 % Remove this when you strart your paper
